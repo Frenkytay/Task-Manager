@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css" />
+
+    <link rel="stylesheet" href="styles/category.css" />
+    <script src="addCategory.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sticky">
+      <div class="container">
+        <a class="" href="/homepage.html"><strong>WearHouse</strong></a>
+
+        <div class="hamburger" id="show-hamburger">
+          <div class="container3">
+            <div class="hidden-wrapper">
+              <a onclick="checkUserIsLogin()" class="hidden">Category</a>
+              <a href="aboutus.html" class="hidden">About us</a>
+            </div>
+
+            <div id="userLogin" class="hidden-wrapper">
+              <a href="login.html" class="hidden">Login</a>
+              <a href="register.html" class="hidden">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+   
+    <div id="category-container">
+      <button class="category-button" id="add-category">Add Category</button>
+
+      <table id="data-table">
+        <tr>
+          <th>No</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </table>
+    </div>
+    <div class="modal-container display-none">
+      <div class="modal" id="myForm">
+        <div class="modal-header">
+          <label for="psw"><b>Edit Category</b></label>
+          <span onclick="closePopUp(1)">&times;</span>
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder=""
+            name=""
+            id="edit-category-text"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit" class="submit-btn" id="edit-category-button">
+            submit
+          </button>
+          <button type="button" class="cancel-btn" onclick="closePopUp(1)">
+            cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container display-none">
+      <div class="modal" id="myForm">
+        <div class="modal-header">
+          <label for="psw"><b>Add Category</b></label>
+          <span onclick="closePopUp(2)">&times;</span>
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder=""
+            name=""
+            id="add-category-text"
+            required
+          />
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="submit-btn"
+            id=""
+            onclick="addCategory()"
+          >
+            submit
+          </button>
+          <button type="button" class="cancel-btn" onclick="closePopUp(2)">
+            cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container display-none">
+      <div class="modal" id="myForm">
+        <div class="modal-header">
+          <label for="psw"><b>Delete Category</b></label>
+          <span onclick="closePopUp(3)"> &times;</span>
+        </div>
+        <div>
+          <p>
+            This action is irreversible! are you sure you want to delete this
+            category?
+          </p>
+        </div>
+        <div>
+          <button type="submit" class="submit-btn" id="delete-category-button">
+            Delete
+          </button>
+          <button type="submit" class="cancel-btn" onclick="closePopUp(3)">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer>
+      <div>
+        <img src="images/twitter.svg" alt="" />
+        <img src="images/facebook.svg" alt="" />
+        <img src="images/instagram.svg" alt="" />
+      </div>
+
+      <p>Copyright 2021 Frenky. All Rights Reserved</p>
+    </footer>
+  </body>
+  <!-- <script src="checkUserIslogin.js"></script> -->
+  <script src="getCategory.js"></script>
+  <script src="checkUserIslogin.js"></script>
+  <script src="responsiveNav.js"></script>
+</html>

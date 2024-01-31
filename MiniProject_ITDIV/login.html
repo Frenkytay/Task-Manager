@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sticky">
+      <div class="container">
+        <a class="" href="/homepage.html"><strong>WearHouse</strong></a>
+
+        <div class="hamburger" id="show-hamburger">
+          <div class="container3">
+            <div class="hidden-wrapper">
+              <a onclick="checkUserIsLogin()" class="hidden">Category</a>
+              <a href="aboutus.html" class="hidden">About us</a>
+            </div>
+
+            <div id="userLogin" class="hidden-wrapper">
+              <a href="login.html" class="hidden">Login</a>
+              <a href="register.html" class="hidden">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+   
+    <div class="box">
+      <div class="container">
+        <p class="login-text">Login</p>
+        <div class="container2">
+          <div class="grid-container">
+            <p class="grid-items">Email Address</p>
+            <div class="input-wrapper">
+
+              <input
+              id="email"
+              type="text"
+              name=""
+              id=""
+              value=""
+              placeholder="Email"
+              required
+              />
+              <small id="email-warning"></small>
+            </div>
+            <p class="grid-items">Password</p>
+            <div class="input-wrapper">
+
+              <input
+              id="password"
+              type="password"
+              name=""
+              id=""
+              value=""
+              placeholder="Password"
+              required
+              />
+              <small id="password-warning"></small>
+            </div>
+            <div></div>
+            <div>
+              <div class="checkbox">
+                <input type="checkbox" name="" id="" />
+                <p>Remember Me</p>
+              </div>
+              <div class="login-button">
+                <button onclick="checkLogin()">Login</button>
+                <a href="">Forgot Your Password?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer>
+      <div>
+        <img src="images/twitter.svg" alt="" />
+        <img src="images/facebook.svg" alt="" />
+        <img src="images/instagram.svg" alt="" />
+      </div>
+
+      <p>Copyright 2021 Frenky. All Rights Reserved</p>
+    </footer>
+
+    <script src="login.js"></script>
+    <script src="checkUserIslogin.js"></script>
+    <script src="responsiveNav.js"></script>
+  </body>
+</html>

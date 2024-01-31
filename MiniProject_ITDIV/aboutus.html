@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css" />
+    <link rel="stylesheet" href="styles/aboutus.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sticky">
+      <div class="container">
+        <a class="" href="/homepage.html"><strong>WearHouse</strong></a>
+
+        <div class="hamburger" id="show-hamburger">
+          <div class="container3">
+            <div class="hidden-wrapper">
+              <a onclick="checkUserIsLogin()" class="hidden">Category</a>
+              <a href="aboutus.html" class="hidden">About us</a>
+            </div>
+
+            <div id="userLogin" class="hidden-wrapper">
+              <a href="login.html" class="hidden">Login</a>
+              <a href="register.html" class="hidden">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+   
+    <div class="aboutus-container">
+      <div>
+        <h4 class="aboutus-text">About us</h4>
+      </div>
+      <div>
+        <div>
+          <p>
+            WearHouse is a fast fashion brand that founded in 2019. WearHouse
+            aims to provide affordable, high quality trendy and easy-to-access
+            fashion apparels. To fullfil out goals, we have opened more than 100
+            stores in various cities across Indonesia. We have a commitment to
+            make each of our product available in every store, with equal price
+            tags and build qualities regardless of location.
+          </p>
+          <h4>Contact Us</h4>
+          <p>Phone:(021) 12345</p>
+          <p>Email:support@WearHouse.com</p>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer>
+      <div>
+        <img src="images/twitter.svg" alt="" />
+        <img src="images/facebook.svg" alt="" />
+        <img src="images/instagram.svg" alt="" />
+      </div>
+
+      <p>Copyright 2021 Frenky. All Rights Reserved</p>
+    </footer>
+
+    <script src="responsiveNav.js"></script>
+    <script src="checkUserIslogin.js"></script>
+ 
+  </body>
+</html>

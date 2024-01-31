@@ -1,0 +1,23 @@
+.dashboard {
+    width: 90%;
+    height:300px;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-inline: auto;
+    margin-top: 20px;
+    
+}
+.dashboard div:nth-child(1){
+    font-weight: bold;
+    color: white;
+    background-color: rgb(141, 145, 148);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+.dashboard div:nth-child(2){
+    padding-left: 10px;
+}

@@ -1,0 +1,44 @@
+.aboutus-container{
+    width: 70%;
+    height: auto;
+    border: 1px solid black;
+    margin-inline: auto;
+    border-radius: 5px;
+    margin-top: 5rem;
+}
+.aboutus-text{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.aboutus-container div:nth-child(1){
+    height: 3rem;
+  
+    
+}
+.aboutus-container div:nth-child(2){
+    width: 95%;
+    height: auto;
+    margin-inline: auto;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+
+}
+.aboutus-container div:nth-child(2) div{
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 4rem;
+    height: fit-content;
+    padding-left: 10px;
+    max-width: 95%;
+   
+
+}
+#userlogin{
+    width: fit-content;
+}

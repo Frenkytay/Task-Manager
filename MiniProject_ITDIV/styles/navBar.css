@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  min-height: auto;
+  max-width: auto;
+ 
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main{
+  min-height: 70vh
+}
+nav {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+nav .hamburger {
+  width: 100%;
+}
+
+nav .hamburger .container3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-inline: auto;
+  gap: 30px;
+}
+
+.hamburger div {
+  display: flex;
+  gap: 30px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  /* margin-top: auto; */
+  /* position: absolute; */
+  background-color: rgb(30, 32, 35);
+ 
+ margin-top: 3rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  z-index: 10;
+  align-items: center;
+}
+footer img {
+  width: 30px;
+  height: auto;
+}
+footer p {
+  color: white;
+}
+
+
+#username img {
+  width: 10px;
+  height: auto;
+}
+
+.User{
+  display: flex;
+  gap: 10px !important;
+}
+
+.logout-button {
+  position: absolute;
+  top: 50px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: right;
+}
+
+.show {
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  nav #menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    opacity: 100;
+  }
+
+  nav .hamburger {
+    position: absolute;
+    display: none;
+    height: 90vh;
+    width: 15rem !important;
+    top: 100%;
+    right: 0%;
+    text-align: right;
+    margin-inline: auto;
+    background-color: rgb(220, 220, 220, 1);
+    border-top: 1px solid black;
+    z-index: 1;
+  }
+
+  nav .hamburger .container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 2rem;
+  }
+
+  nav .hamburger.active {
+    display: flex;
+  }
+
+  #menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+  }
+
+  .hidden-wrapper {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .logout-button {
+    position: relative;
+    top: 0px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    
+  }
+
+  #username-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: left;
+    gap: 0px !important;
+    padding: 0px !important;
+  }
+
+  #username{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+
+}

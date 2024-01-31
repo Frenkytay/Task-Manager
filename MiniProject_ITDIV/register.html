@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css" />
+    <link rel="stylesheet" href="styles/register.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sticky">
+      <div class="container">
+        <a class="" href="/homepage.html"><strong>WearHouse</strong></a>
+
+        <div class="hamburger" id="show-hamburger">
+          <div class="container3">
+            <div class="hidden-wrapper">
+              <a onclick="checkUserIsLogin()" class="hidden">Category</a>
+              <a href="aboutus.html" class="hidden">About us</a>
+            </div>
+
+            <div id="userLogin" class="hidden-wrapper">
+              <a href="login.html" class="hidden">Login</a>
+              <a href="register.html" class="hidden">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+    
+    <div class="box">
+      <div class="container">
+        <p class="register-text">Register</p>
+
+        <div class="container2">
+          <div class="grid-container">
+            <p class="grid-items">Email Address</p>
+
+            <div class="input-wrapper">
+              <input
+                id="email"
+                type="text"
+                name=""
+                id=""
+                value=""
+                class=""
+                placeholder="Email"
+              />
+              <small id="email-warning"></small>
+            </div>
+
+            <p class="grid-items">Username</p>
+            <div class="input-wrapper">
+              <input type="text" name="" id="username" placeholder="Username" />
+              <small id="username-warning"></small>
+            </div>
+            <p class="grid-items">Password</p>
+            <div class="input-wrapper">
+              <input
+                id="password"
+                type="password"
+                name=""
+                id=""
+                value=""
+                placeholder="Password"
+              />
+              <small id="password-warning"></small>
+            </div>
+            <p class="grid-items">Confirm Password</p>
+
+            <div class="input-wrapper">
+              <input
+                type="password"
+                name=""
+                id="confirm-password"
+                placeholder="Confirm Password"
+              />
+              <small id="confirm-password-warning"></small>
+            </div>
+            <div></div>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="accept" />
+              <a href=""
+                >By cliking register, i agree to the terms and conditions.</a
+              >
+            </div>
+            <div></div>
+            <div class="register-button">
+              <button onclick="registerUser()">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer>
+      <div>
+        <img src="images/twitter.svg" alt="" />
+        <img src="images/facebook.svg" alt="" />
+        <img src="images/instagram.svg" alt="" />
+      </div>
+
+      <p>Copyright 2021 Frenky. All Rights Reserved</p>
+    </footer>
+
+    <script src="register.js"></script>
+    <script src="checkUserIslogin.js"></script>
+    <script src="responsiveNav.js"></script>
+  </body>
+</html>

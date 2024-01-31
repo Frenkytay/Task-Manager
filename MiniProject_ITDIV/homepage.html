@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css" />
+    <link rel="stylesheet" href="styles/homepage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- SS -->
+    <nav class="sticky">
+      <div class="container">
+        <a class="" href="/homepage.html"><strong>WearHouse</strong></a>
+
+        <div class="hamburger" id="show-hamburger">
+          <div class="container3">
+            <div class="hidden-wrapper">
+              <a href="#" onclick="checkUserIsLogin()" class="hidden"
+                >Category</a
+              >
+              <a href="aboutus.html" class="hidden">About us</a>
+            </div>
+
+            <div id="userLogin" class="hidden-wrapper">
+              <a href="login.html" class="hidden">Login</a>
+              <a href="register.html" class="hidden">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+   
+    <div class="dashboard">
+      <div>
+        <p>Dashboard</p>
+      </div>
+      <div id="login-text">You are not logged in !</div>
+    </div>
+  </main>
+    <footer>
+      <div>
+        <img src="images/twitter.svg" alt="" />
+        <img src="images/facebook.svg" alt="" />
+        <img src="images/instagram.svg" alt="" />
+      </div>
+
+      <p>Copyright &copy; 2021 Frenky. All Rights Reserved</p>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="checkUserIslogin.js"></script>
+    <script src="responsiveNav.js"></script>
+  </body>
+</html>

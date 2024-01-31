@@ -1,0 +1,101 @@
+.box {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.box .container {
+  width: 80%;
+  margin-inline: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.box .container .container2 {
+  margin: auto;
+  padding: 50px 15px 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  overflow: auto;
+}
+
+.login-text {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.grid-items {
+  text-align: right;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.checkbox input {
+  margin-right: 1rem;
+}
+.login-button {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: left;
+}
+.login-button button {
+  padding: 10px 30px;
+  background-color: #0275d8;
+  border-radius: 5px;
+  color: white;
+  margin-right: 1rem;
+  border: 1px solid #0275d8;
+  font-weight: bold;
+}
+.login-button a {
+  display: flex;
+  align-items: center;
+}
+.grid-container input[type="text"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 10px;
+  border-radius: 5px;
+  /* width: 300px; */
+}
+.grid-container input[type="password"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 10px;
+  border-radius: 5px;
+  /* width: 300px; */
+}
+.warning-text {
+  border: 2px solid red;
+}
+.login-button button:hover{
+  background-color: white;
+  color: black;
+}
+.login-button button:active{
+  background-color: #0984ef;
+  color: whi;
+
+}
+small{
+  color:  red;
+}
+
+@media screen and (max-width: 600px) {
+  /* .box {
+    width: 90%;
+  } */
+}
